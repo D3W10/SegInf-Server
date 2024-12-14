@@ -15,8 +15,7 @@ app.get("/", (req, res) => {
 
 const options = {
     key: fs.readFileSync("./keys/key.pem"),
-    cert: fs.readFileSync("./keys/cert.pem"),
-    ca: fs.readFileSync("./keys/CA2.pem")
+    cert: fs.readFileSync("./keys/cert.pem")
 };
 
 const server = createServer(options, app);
